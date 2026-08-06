@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TapLock</string>
+    <string name="setup_title">TapLock Setup</string>
+    <string name="setup_explanation">Enable the TapLock accessibility service so the home screen widget can lock your screen like the power button.\n\nFingerprint and face unlock will work normally after locking.\n\nNo data is collected. No internet access.</string>
+    <string name="accessibility_service_description">Locks the screen when you tap the TapLock home screen widget. Does not read screen content.</string>
+    <string name="btn_enable_admin">Open Accessibility Settings</string>
+    <string name="setup_complete">Setup complete. You can now place the TapLock widget on your home screen.</string>
+    <string name="btn_close">Close</string>
+    <string name="widget_name">TapLock</string>
+    <string name="widget_description">Tap to lock the screen.</string>
+    <string name="widget_lock_description">Lock screen</string>
+</resources>
