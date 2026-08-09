@@ -18,6 +18,33 @@ import org.robolectric.annotation.Config
 class WidgetResourceTest {
 
     @Test
+    fun appIcon_loadsAsVectorDrawable() {
+        val context = ApplicationProvider.getApplicationContext<android.content.Context>()
+        val drawable = AppCompatResources.getDrawable(context, R.drawable.ic_app_icon)
+        assertNotNull(drawable)
+        assertTrue(drawable is VectorDrawable)
+    }
+
+    @Test
+    fun appIconHeroLayout_inflates() {
+        val context = ApplicationProvider.getApplicationContext<android.content.Context>()
+        val view = android.view.LayoutInflater.from(context)
+            .inflate(R.layout.view_app_icon_hero, null)
+        assertNotNull(view)
+    }
+
+    @Test
+    fun widgetHelpDialogLayout_inflates() {
+        val context = android.view.ContextThemeWrapper(
+            ApplicationProvider.getApplicationContext(),
+            R.style.Theme_TapLock_Dialog
+        )
+        val view = android.view.LayoutInflater.from(context)
+            .inflate(R.layout.dialog_widget_help, null)
+        assertNotNull(view.findViewById<android.view.View>(R.id.btn_dialog_dismiss))
+    }
+
+    @Test
     fun lockIcon_loadsAsVectorDrawable() {
         val context = ApplicationProvider.getApplicationContext<android.content.Context>()
         val drawable = AppCompatResources.getDrawable(context, R.drawable.ic_lock)

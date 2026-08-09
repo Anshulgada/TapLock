@@ -2,11 +2,62 @@
 <resources>
     <string name="app_name">TapLock</string>
     <string name="setup_title">TapLock Setup</string>
-    <string name="setup_explanation">Enable the TapLock accessibility service so the home screen widget can lock your screen like the power button.\n\nFingerprint and face unlock will work normally after locking.\n\nNo data is collected. No internet access.</string>
+    <string name="setup_title_active">TapLock</string>
+    <string name="home_subtitle">One-tap lock from your home screen</string>
+    <string name="home_version">Version %1$s</string>
+    <string name="status_ghost_active">Ghost mode is active</string>
+    <string name="status_classic_active">Classic mode is active</string>
+    <string name="status_setup_needed">Setup required</string>
+
+    <string name="setup_explanation_ghost">Ghost mode keeps TapLock invisible to UPI and banking apps. Accessibility is only enabled for a split second when you lock.</string>
+    <string name="setup_steps_title">One-time setup</string>
+    <string name="setup_steps_body">1. Connect your phone to a PC with USB debugging\n2. Run both commands below\n3. Re-open TapLock and turn off developer options</string>
+    <string name="setup_ecm_warning">Run both commands below. On some devices, also enable the USB debugging security toggle in Developer options first.</string>
+    <string name="setup_ghost_complete">UPI apps won\u2019t see TapLock in accessibility. Fingerprint and face unlock work normally after locking.</string>
+    <string name="setup_classic_complete">TapLock stays enabled in Accessibility settings. Some UPI and banking apps may refuse to run until you disable it.</string>
+
+    <string name="section_actions">Quick actions</string>
+
     <string name="accessibility_service_description">Locks the screen when you tap the TapLock home screen widget. Does not read screen content.</string>
-    <string name="btn_enable_admin">Open Accessibility Settings</string>
-    <string name="setup_complete">Setup complete. You can now place the TapLock widget on your home screen.</string>
-    <string name="btn_close">Close</string>
+    <string name="btn_copy_commands">Copy setup commands</string>
+    <string name="btn_enable_accessibility_classic">Use classic mode instead</string>
+    <string name="btn_cleanup_dev_options">Turn off developer options</string>
+    <string name="btn_turn_on_dev_options">Turn on developer options</string>
+    <string name="btn_add_widget">How to add the widget</string>
+    <string name="btn_verify_accessibility">Confirm TapLock isn\u2019t listed</string>
+    <string name="btn_open_accessibility">Open accessibility settings</string>
+    <string name="btn_open_dev_options">Open developer options</string>
+    <string name="btn_enable_usb_debugging">Turn on USB debugging</string>
+    <string name="btn_show_help">Read the FAQ</string>
+    <string name="btn_hide_help">Close FAQ</string>
+    <string name="btn_close">Done</string>
+    <string name="btn_got_it">Got it</string>
+
+    <string name="help_title">Help &amp; FAQ</string>
+    <string name="help_subtitle">Answers about setup, widgets, UPI apps, and privacy</string>
+    <string name="help_ghost_title">How ghost mode works</string>
+    <string name="help_ghost_body">TapLock briefly enables its accessibility service only while locking (~700 ms), then removes itself. UPI apps never see it in your accessibility list.</string>
+    <string name="help_widget_title">Add the widget</string>
+    <string name="help_widget_body">Long-press your home screen \u2192 Widgets \u2192 TapLock \u2192 drag it on. On some phones you can also long-press the TapLock app icon and choose Add widgets.</string>
+    <string name="help_reinstall_title">After reinstall</string>
+    <string name="help_reinstall_body">Re-run the two setup commands from a PC, then open TapLock again. Turn developer options back on first if you disabled them.</string>
+    <string name="help_classic_title">Classic mode</string>
+    <string name="help_classic_body">If you can\u2019t run ADB commands, enable TapLock manually in Accessibility settings. Banking apps may block while it stays on.</string>
+    <string name="help_privacy_title">Privacy</string>
+    <string name="help_privacy_body">No internet, no analytics, no screen reading. TapLock only performs the system lock action.</string>
+
+    <string name="dialog_widget_title">Add the TapLock widget</string>
+    <string name="dialog_widget_step_home">1. Long-press an empty area on your home screen\n2. Tap Widgets\n3. Find TapLock and drag it to your home screen</string>
+    <string name="dialog_widget_step_vendor">On some phones (Samsung, Xiaomi, OnePlus, and others), you can also long-press the TapLock app icon on your home screen or app drawer and choose Add widgets or Widgets.</string>
+    <string name="dialog_widget_step_use">Tap the widget any time to lock your phone with the shackle animation.</string>
+
+    <string name="toast_commands_copied">Setup commands copied</string>
+    <string name="toast_dev_options_off">Developer options turned off</string>
+    <string name="toast_dev_options_on">Developer options turned on</string>
+    <string name="toast_dev_options_failed">Could not change developer options</string>
+    <string name="toast_usb_debug_on">USB debugging turned on</string>
+    <string name="toast_usb_debug_failed">Could not enable USB debugging — open Developer options</string>
+
     <string name="widget_name">TapLock</string>
     <string name="widget_description">Tap to lock the screen.</string>
     <string name="widget_lock_description">Lock screen</string>

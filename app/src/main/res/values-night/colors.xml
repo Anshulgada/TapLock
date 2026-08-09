@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ghost_status_background">#336563FF</color>
+    <color name="ghost_status_text">#B2B1FF</color>
+    <color name="status_body_text">#DEFFFFFF</color>
+    <color name="subtitle_text">#99FFFFFF</color>
+    <color name="section_title_text">#99FFFFFF</color>
+    <color name="card_background">#1E1E2E</color>
+    <color name="card_stroke">#336563FF</color>
+    <color name="command_box_background">#33FFFFFF</color>
+    <color name="classic_status_background">#33FF9800</color>
+    <color name="classic_status_text">#FFB74D</color>
+    <color name="screen_background">#121218</color>
+    <color name="icon_gradient_start">#3A3899</color>
+    <color name="icon_gradient_end">#9896F5</color>
+</resources>

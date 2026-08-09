@@ -6,4 +6,17 @@
     <color name="color_primary">#6563FF</color>
     <color name="color_primary_variant">#4F4DCC</color>
     <color name="color_on_primary">#FFFFFF</color>
+    <color name="ghost_status_background">#1A6563FF</color>
+    <color name="ghost_status_text">#6563FF</color>
+    <color name="status_body_text">#DE000000</color>
+    <color name="subtitle_text">#99000000</color>
+    <color name="section_title_text">#99000000</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="card_stroke">#1A6563FF</color>
+    <color name="command_box_background">#0D000000</color>
+    <color name="classic_status_background">#1AFF9800</color>
+    <color name="classic_status_text">#E65100</color>
+    <color name="screen_background">#F5F4FF</color>
+    <color name="icon_gradient_start">#D4D2FF</color>
+    <color name="icon_gradient_end">#7E7CF0</color>
 </resources>

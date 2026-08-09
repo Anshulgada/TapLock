@@ -10,15 +10,14 @@ import androidx.core.content.getSystemService
 
 /**
  * Handles widget tap events. Shows a center-screen lock animation, then locks
- * via [LockAccessibilityService]. Opens [MainActivity] only when the service
- * is disabled in system settings.
+ * via [LockAccessibilityService]. Opens [MainActivity] when lock is unavailable.
  */
 class LockReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context, intent: Intent?) {
         if (intent?.action != ACTION_LOCK) return
 
-        if (!LockAccessibilityService.isEnabled(context)) {
+        if (!LockAccessibilityService.canLock(context)) {
             openSetup(context)
             return
         }
@@ -28,7 +27,7 @@ class LockReceiver : BroadcastReceiver() {
         val animationIntent = Intent(context, LockAnimationActivity::class.java).apply {
             flags = Intent.FLAG_ACTIVITY_NEW_TASK or
                 Intent.FLAG_ACTIVITY_NO_ANIMATION or
-                Intent.FLAG_ACTIVITY_CLEAR_TOP
+                Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS
         }
         context.startActivity(animationIntent)
     }
